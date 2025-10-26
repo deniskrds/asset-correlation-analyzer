@@ -5,7 +5,6 @@ from pathlib import Path
 import pandas as pd
 import yfinance as yf
 
-sys.path.append(str(Path(__file__).parent.parent))
 from server.config import settings
 from server.utils.logger import setup_logger
 
