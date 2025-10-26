@@ -53,7 +53,7 @@ class YahooFinanceClient:
             df = self.fetch_asset_data(symbol, asset_name)
 
             if not df.empty:
-                filename = f"{symbol.replace('^', '').replace('=', '_').replace('.', '_')}.csv"
+                filename = settings.asset_filenames[asset_name]
                 success = self.save_to_csv(df, filename)
                 if success:
                     self.logger.info(f"Data for {asset_name} saved successfully.")
