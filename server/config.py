@@ -23,6 +23,18 @@ class Settings(BaseSettings):
         'US Dollar Index': 'DX-Y.NYB',
         'Bitcoin': 'BTC-USD'
     }
+    
+    asset_filenames: Dict[str, str] = {
+        'S&P 500': 'GSPC.csv',
+        'NASDAQ': 'IXIC.csv',
+        'FTSE 100': 'FTSE.csv',
+        'US 10-Year Treasury': 'TNX.csv',
+        'Corporate Bonds': 'FP74_MU.csv',
+        'Gold': 'GC_F.csv',
+        'Crude Oil': 'CL_F.csv',
+        'US Dollar Index': 'DX-Y_NYB.csv',
+        'Bitcoin': 'BTC-USD.csv'
+    }
 
 
 settings = Settings()
