@@ -1,5 +1,7 @@
 # Asset Correlation Analyzer
 
+> ⚠️ **Status: Under Active Development** - This project is currently being developed and is not production-ready.
+
 A web application to analyze and visualize correlations between financial assets using historical price data.
 
 ## Features
