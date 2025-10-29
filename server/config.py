@@ -11,6 +11,7 @@ class Settings(BaseSettings):
 
     data_fetch_years: int = 2
     data_directory: str
+    cors_origins: str
 
     asset_symbols: Dict[str, str] = {
         'S&P 500': '^GSPC',
