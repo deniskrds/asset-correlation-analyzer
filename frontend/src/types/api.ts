@@ -4,3 +4,11 @@ export interface CorrelationResponse {
   data_points: number;
 }
 
+export interface BaseResponse<T = unknown> {
+  success: boolean;
+  data: T | null;
+  message: string;
+  status_code: number;
+  timestamp: string;
+}
+

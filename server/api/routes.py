@@ -10,7 +10,7 @@ logger = setup_logger('correlation_api')
 @router.get("/correlations")
 async def get_correlations():
     response = get_correlation_matrix()
-    return response.model_dump(), response.status_code
+    return response.model_dump()
 
 
 @router.get("/health")
